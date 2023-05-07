@@ -26,11 +26,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* COL2ROW, ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
-// place overrides here
-#define TAPPING_TERM 200
 
 
 #ifdef RGB_MATRIX_ENABLE
+
 // The number of LEDs connected
 #    define RGB_MATRIX_LED_COUNT 54
 #    define DRIVER_LED_TOTAL RGB_MATRIX_LED_COUNT
@@ -38,12 +37,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         { 27, 27 }
 #    define SPLIT_TRANSPORT_MIRROR
 
-#   define ENABLE_RGB_MATRIX_ALPHAS_MODS
-#   define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
-#   define ENABLE_RGB_MATRIX_GRADIENT_LEFT_RIGHT
-#   define ENABLE_RGB_MATRIX_BREATHING
-#   define ENABLE_RGB_MATRIX_BAND_SAT
 #endif
-
-#define SPLIT_USB_DETECT
-

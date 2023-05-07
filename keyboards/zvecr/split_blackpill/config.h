@@ -31,10 +31,15 @@
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-#define MATRIX_COL_PINS { B11, B10, B1, B0, A7, A6 }
-#define MATRIX_ROW_PINS { B15, B14, B13, B12 }
-#define MATRIX_COL_PINS_RIGHT { B12, B13, B14, B15, A8, A9 }
-#define MATRIX_ROW_PINS_RIGHT { B0, B1, B10, B11 }
+// #define MATRIX_COL_PINS { B11, B10, B1, B0, A7, A6 }
+// #define MATRIX_ROW_PINS { B15, B14, B13, B12 }
+// #define MATRIX_COL_PINS_RIGHT { B12, B13, B14, B15, A8, A9 }
+// #define MATRIX_ROW_PINS_RIGHT { B0, B1, B10, B11 }
+
+#define MATRIX_COL_PINS { A7, B0, B1, B10, B11, A6 }
+#define MATRIX_ROW_PINS { B7, B6, B9, B12 }
+#define MATRIX_COL_PINS_RIGHT { B8, B9, B4, B5, B6, B7 }
+#define MATRIX_ROW_PINS_RIGHT { B1, A4, A2, A3 }
 
 /* COL2ROW, ROW2COL*/
 #define DIODE_DIRECTION COL2ROW
@@ -45,7 +50,7 @@
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
  */
 #define SPLIT_HAND_PIN B3
-#define SOFT_SERIAL_PIN B6
+#define SOFT_SERIAL_PIN B3
 #define SELECT_SOFT_SERIAL_SPEED 0
 
 #define RGB_DI_PIN B4
