@@ -27,7 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DIODE_DIRECTION COL2ROW
 
 
-
 #ifdef RGB_MATRIX_ENABLE
 
 // The number of LEDs connected
@@ -35,6 +34,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #    define DRIVER_LED_TOTAL RGB_MATRIX_LED_COUNT
 #    define RGB_MATRIX_SPLIT \
         { 27, 27 }
-#    define SPLIT_TRANSPORT_MIRROR
+#define RGBLED_NUM 54
+#define RGBLED_SPLIT { 27, 27 }
+#define RGBLIGHT_ANIMATIONS
 
 #endif

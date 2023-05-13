@@ -41,9 +41,33 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /*
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
  */
-#define SOFT_SERIAL_PIN B6  // or D0, D1, D3, E6
+// #define SPLIT_HAND_PIN A7
+#define SOFT_SERIAL_PIN B6
+// #define SERIAL_USART_TX_PIN B6
+// #define SERIAL_USART_SPEED 921600
+#define USART1_REMAP               // Remap USART TX and RX pins on STM32F103 MCUs, see table below.
+// #define SERIAL_USART_TX_PAL_MODE 7 // Pin "alternate function", see the respective datasheet for the appropriate values for your MCU. default: 7
 
 #define RGB_DI_PIN B13
+#define WS2812_PWM_COMPLEMENTARY_OUTPUT
+#define WS2812_PWM_DRIVER PWMD1
+#define WS2812_PWM_CHANNEL 1
+#define WS2812_PWM_PAL_MODE 1
+#define WS2812_DMA_STREAM STM32_DMA1_STREAM5
+#define WS2812_DMA_CHANNEL 1
+// #define WS2812_PWM_TARGET_PERIOD 800000
+
+
+
+
+// #define RGB_DI_PIN A1
+// #define WS2812_PWM_DRIVER PWMD2
+// #define WS2812_PWM_CHANNEL 2
+// #define WS2812_PWM_PAL_MODE 1
+// #define WS2812_EXTERNAL_PULLUP
+// #define WS2812_DMA_STREAM STM32_DMA1_STREAM1
+// #define WS2812_DMA_CHANNEL 3
+// #define WS2812_PWM_TARGET_PERIOD 800000
 
 #ifdef RGB_MATRIX_ENABLE
 #   define ENABLE_RGB_MATRIX_ALPHAS_MODS
