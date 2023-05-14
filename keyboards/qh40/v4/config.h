@@ -48,6 +48,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define USART1_REMAP               // Remap USART TX and RX pins on STM32F103 MCUs, see table below.
 // #define SERIAL_USART_TX_PAL_MODE 7 // Pin "alternate function", see the respective datasheet for the appropriate values for your MCU. default: 7
 
+#define COMBO_ONLY_FROM_LAYER 0
+#define LAYER_STATE_16BIT
+
 #define RGB_DI_PIN B13
 #define WS2812_PWM_COMPLEMENTARY_OUTPUT
 #define WS2812_PWM_DRIVER PWMD1
@@ -99,4 +102,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #   define ENABLE_RGB_MATRIX_PIXEL_FRACTAL
 #   define ENABLE_RGB_MATRIX_PIXEL_FLOW
 #   define ENABLE_RGB_MATRIX_PIXEL_RAIN
+// Framebuffer Defines	
+#   define RGB_MATRIX_FRAMEBUFFER_EFFECTS // enable framebuffer effects
+#   define ENABLE_RGB_MATRIX_TYPING_HEATMAP
+#   define ENABLE_RGB_MATRIX_DIGITAL_RAIN
+// Reactive Defines	
+#   define RGB_MATRIX_KEYPRESSES // reacts to keypresses
+#   define RGB_MATRIX_KEYRELEASES // reacts to keyreleases (instead of keypresses)
+#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE	
+#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE	
+#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE	
+#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTIWIDE	
+#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_CROSS	
+#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTICROSS	
+#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_NEXUS	
+#   define ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTINEXUS	
+#   define ENABLE_RGB_MATRIX_SPLASH	
+#   define ENABLE_RGB_MATRIX_MULTISPLASH	
+#   define ENABLE_RGB_MATRIX_SOLID_SPLASH	
+#   define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH	
 #endif
