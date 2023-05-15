@@ -8,18 +8,18 @@ BOOTLOADER = stm32duino
 BOOTMAGIC_ENABLE = yes      # Enable Bootmagic Lite
 MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
+NKRO_ENABLE = yes           # Enable N-Key Rollover
 COMBO_ENABLE = yes
 TAP_DANCE_ENABLE = yes
-KEY_LOCK_ENABLE = yes
-KEY_OVERRIDE_ENABLE = yes
-SEND_STRING_ENABLE = yes
-SECURE_ENABLE = yes
-SEQUENCER_ENABLE = yes
-AUTO_SHIFT_ENABLE = yes
-CAPS_WORD_ENABLE = yes
+KEY_LOCK_ENABLE = no
+KEY_OVERRIDE_ENABLE = no
+SEND_STRING_ENABLE = no
+SECURE_ENABLE = no
+SEQUENCER_ENABLE = no
+AUTO_SHIFT_ENABLE = no
+CAPS_WORD_ENABLE = no
 CONSOLE_ENABLE = no         # Console for debug
 COMMAND_ENABLE = no         # Commands for debug and configuration
-NKRO_ENABLE = no           # Enable N-Key Rollover
 
 # KEY_LOCK_ENABLE = yes
 SPLIT_KEYBOARD = yes        # Enables split keyboard support
@@ -41,4 +41,4 @@ SERIAL_DRIVER = usart
 
 
 # Enter lower-power sleep mode when on the ChibiOS idle thread
-OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
+# OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
